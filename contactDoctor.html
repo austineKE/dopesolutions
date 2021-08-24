@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dope solutions</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="search-box">
+        <input type="text" placeholder="Search here..." />
+    </div>
+
+    <div class="nav-container">
+        <div class="wrapper">
+            <nav>
+                <div class="logo">
+                    <img src="images/logo1.jpg" alt="" style="width: 150px; height: 100px" ; />
+                </div>
+
+                <ul class="nav-items">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="buyMedicine.html">Buy Medicine</a>
+                    </li>
+
+                    <li>
+                        <div class="popup" onclick="myFunction()"> <a href="#">FAQs</a>
+                            <span class="popuptext" id="myPopup">No  page created for now</span>
+                          </div>
+                    </li>
+
+                    <li>
+                        <a class="nav-btn-container" href="#">
+                            <img class="search-btn" src="images/search-icon.svg" alt="" />
+                            <img class="close-btn" src="images/close-icon.svg" alt="" />
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <div class="myForm">
+        <h1 style="text-align: center; padding: 10px 0 10px 0;"> Fill out your information</h1>
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Email</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="email" name="lastname" placeholder="Your email..">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">National ID</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="nationaId" name="lastname" placeholder="Your National id..">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Category</label>
+                </div>
+                <div class="col-75">
+                    <select id="category" name="category">
+                        <option value="routine">Routine Medical Check Up</option>
+                        <option value="aches">Aches</option>
+                        <option value="maternal">Maternal Issues</option>
+                        <option value="paternal">Paternal Issues</option>
+                        <option value="usa">Body Pain</option>
+                        <option value="usa">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Give a brief description of your illness.."
+                        style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit" id="submitButton">
+            </div>
+        </form>
+    </div>
+
+    
+    <script>
+        function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+        }
+        </script>
+
+</body>
+
+</html>

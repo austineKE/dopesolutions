@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dope solutions</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="search-box">
+        <input type="text" placeholder="Search here..." />
+    </div>
+
+    <div class="nav-container">
+        <div class="wrapper">
+            <nav>
+                <div class="logo">
+                    <img src="images/logo1.jpg" alt="" style="width: 150px; height: 100px" ; />
+                </div>
+
+                <ul class="nav-items">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="contactDoctor.html">Contact Doctor</a>
+                    </li>
+
+                    <li>
+                        <div class="popup" onclick="myFunction()"> <a href="#">FAQs</a>
+                            <span class="popuptext" id="myPopup">No  page created for now</span>
+                          </div>
+                    </li>
+
+                    <li>
+                        <a class="nav-btn-container" href="#">
+                            <img class="search-btn" src="images/search-icon.svg" alt="" />
+                            <img class="close-btn" src="images/close-icon.svg" alt="" />
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="myForm" style="height: 500px;">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/sorry.jpg" alt="Avatar" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Hello Austine...</h1> 
+                <p>Buying Medicine will be make available soon..</p> 
+                <p>Thank you</p>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+    <script>
+        function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+        }
+        </script>
+</body>
+
+</html>
